@@ -87,7 +87,7 @@ fun FormDataDiri(modifier: Modifier){
                     id = R.dimen.padding_medium
                 )
             ),
-            thickness = dimensionResource(id = R.dimen.divider_tipis),
+            thickness = dimensionResource(id = R.dimen.padding_tipis),
             color = Color.DarkGray
         )
         Button(
@@ -110,7 +110,7 @@ fun FormDataDiri(modifier: Modifier){
                     id = R.dimen.padding_medium
                 )
             ),
-            thickness = dimensionResource(id = R.dimen.divider_tipis),
+            thickness = dimensionResource(id = R.dimen.padding_tipis),
             color = Color.DarkGray
         )
         ElevatedCard (
