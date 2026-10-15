@@ -23,7 +23,7 @@ fun FormDataDiri(modifier: Modefier){
             value = textNama,
             singleLine = true,
             shape = MaterialTheme.shapes.large,
-            modifier = Modifier.width(250.dp)
+            modifier = Modifier.width(250.dp),
             label = { Text(text = "Nama Lengkap") },
             onValueChange = {
                 textNama = it
@@ -61,4 +61,19 @@ fun FormDataDiri(modifier: Modefier){
                     id = R.dimen.padding_medium
                 )
             ),
+            thickness = dimensionResource(id = R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
+        Button(
+            modifier = Modifier.fillMaxWidth(fraction = 1f),
+            // the button is enabled when the user makes a selection
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama=textNama
+                jenis=textJK
+                alamat=textAlamat
+            }
+        ) {
+            Text(stringResource(id = R.string.submit))
+        }
 }
